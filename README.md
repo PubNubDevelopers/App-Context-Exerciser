@@ -18,7 +18,7 @@ To use this demo, you need the following prerequisites:
 
 ## Demo
 
-A hosted version of this demo can be found at **TBD**
+A hosted version of this demo can be found at [https://pubnubdevelopers.github.io/App-Context-Toolkit-Exerciser/](https://pubnubdevelopers.github.io/App-Context-Toolkit-Exerciser/)
 
 ## Installing / Getting Started
 
