@@ -23,6 +23,7 @@ A hosted version of this demo can be found at [https://pubnubdevelopers.github.i
 ## Installing / Getting Started
 
 - Generate a new keyset
+- **Enable App Context on that keyset**, along with the user, channel, and membership events.
 - Launch the demo
 - Provide the Publish and Subscribe key to the app and click `save`
 - Some test channels and users will be generated for you
