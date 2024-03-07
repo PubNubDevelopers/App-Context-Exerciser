@@ -1,0 +1,72 @@
+<HTML>
+
+    <HEAD>
+        <TITLE>PubNub App Context Toolkit Exerciser</TITLE>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!--  Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800" rel="stylesheet">
+    
+        <link rel="icon" href="./img/favicon.ico" />
+        <link rel="stylesheet" href="./index.css" />
+        <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.6.1.min.js"></script>
+        <script src="./index.js"></script>
+    </HEAD>
+    
+    <BODY onload="init()">
+        <!--  Enter PubNub Keys -->
+        <div id="keyEntryArea"> 
+            <div class="keyArea">
+                <div class="keyTitle">Publish Key: </div>
+                <input type="text" class="form-control pn-text-field keyInput text-body-2" id="txtPublishKey" placeholder="Publish Key" />    
+            </div>
+            <div class="keyArea">
+                <div class="keyTitle">Subscribe Key: </div>
+                <input type="text" class="form-control pn-text-field keyInput text-body-2" id="txtSubscribeKey" placeholder="Subscribe Key" />
+                </div>
+            <button id="btnEditPubNubKeys" class="pn-btn pn-btn-white text-body-1" style="display:none">Edit</button>
+            <button id="btnSavePubNubKeys" class="pn-btn text-body-1">Save</button> 
+        </div>
+
+        <!--  Explanatory Text -->
+        <div id="explanatoryText"><div id="explanatoryTextClose"><img src="./img/cancel.png" height="25px"></div><strong>Important: </strong>Enter a newly-generated NON PRODUCTION Pub / Sub Keyset above.  App Context must be enabled, along with user, channel, and membership events.  Be aware that this app will <u>add data to the provided keyset</u>.<br><br>The columns on this page will populate from the App Context data from the provided keyset (PubNub Keys).  <br>From within your <a href="https://admin.pubnub.com" target="_blank">admin portal</a>, use the App Context Toolkit (part of BizOps Workspace) to manipulate and manage this data.  If you do not see the option for 'App Context Toolkit', you might need to upgrade your PubNub account.  This demo will only show the top 50 recently updated channels and users.
+        <br><br><strong>Not seeing the data update?</strong>   You will only receive events related to channels you are a member of (or users who are also members of that channel).  On launch, this dashboard will join all available channels.  To receive updates on any channels or users you create using the App Context toolkit, you will need to <u>create memberships between them</u>.  <br><br>Refresh data using the button below if you create a new channel using the App Context toolkit, this this dashboard will then join that new channel.  The dashboard may also automatically refresh if membership changes are detected</div>
+
+        <div id="refreshArea">
+            <div id="refreshDataWarning" class="text-body-1" style="display:none">Please Refresh Data --></div>
+
+            <button id="refreshDataButton" class="pn-btn pn-btn-white text-body-2">
+                <nobr>Refresh Data</nobr>
+            </button>    
+        </div>
+
+        <!--  Display Channels, Users & Memberships from App Context -->
+        <div id="appContextDisplayArea">
+            <div class="contextColumn greyBox">
+                <div class="contextColumnHeaderContainer">
+                    <div class="contextColumnHeader heading-2">Users</div>
+                    <img src="./img/users.png" class="contextColumnImage">
+                </div>
+                <div id="users">
+                </div>
+            </div>
+            <div class="contextColumn greyBox">
+                <div class="contextColumnHeaderContainer">
+                    <div class="contextColumnHeader heading-2">Channels</div>
+                    <img src="./img/channels.png" class="contextColumnImage">
+                </div>
+                <div id="channels">
+            </div>
+            </div>
+            <div class="contextColumn greyBox">
+                <div class="contextColumnHeaderContainer">
+                    <div class="contextColumnHeader heading-2">Memberships</div>
+                    <img src="./img/memberships.png" class="contextColumnImage">
+                </div>
+                <div id="memberships">
+
+                </div>
+            </div>
+        </div>
+    </BODY>
+</HTML>
