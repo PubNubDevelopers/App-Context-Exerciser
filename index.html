@@ -1,7 +1,7 @@
 <HTML>
 
     <HEAD>
-        <TITLE>PubNub App Context Toolkit Exerciser</TITLE>
+        <TITLE>PubNub App Context Exerciser</TITLE>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
         <!--  Fonts -->
@@ -29,8 +29,8 @@
         </div>
 
         <!--  Explanatory Text -->
-        <div id="explanatoryText"><div id="explanatoryTextClose"><img src="./img/cancel.png" height="25px"></div><strong>Important: </strong>Enter a newly-generated NON PRODUCTION Pub / Sub Keyset above.  App Context must be enabled, along with user, channel, and membership events.  Be aware that this app will <u>add data to the provided keyset</u>.<br><br>The columns on this page will populate from the App Context data from the provided keyset (PubNub Keys).  <br>From within your <a href="https://admin.pubnub.com" target="_blank">admin portal</a>, use the App Context Toolkit (part of BizOps Workspace) to manipulate and manage this data.  If you do not see the option for 'App Context Toolkit', you might need to upgrade your PubNub account.  This demo will only show the top 50 recently updated channels and users.
-        <br><br><strong>Not seeing the data update?</strong>   You will only receive events related to channels you are a member of (or users who are also members of that channel).  On launch, this dashboard will join all available channels.  To receive updates on any channels or users you create using the App Context toolkit, you will need to <u>create memberships between them</u>.  <br><br>Refresh data using the button below if you create a new channel using the App Context toolkit, this this dashboard will then join that new channel.  The dashboard may also automatically refresh if membership changes are detected</div>
+        <div id="explanatoryText"><div id="explanatoryTextClose"><img src="./img/cancel.png" height="25px"></div><strong>Important: </strong>Enter a newly-generated NON PRODUCTION Pub / Sub Keyset above.  App Context must be enabled, along with user, channel, and membership events.  Be aware that this app will <u>add data to the provided keyset</u>.<br><br>The columns on this page will populate from the App Context data from the provided keyset (PubNub Keys).  <br>From within your <a href="https://admin.pubnub.com" target="_blank">admin portal</a>, use the BizOps Workspace User Management &amp; Channel Management features to manipulate and manage this data.  If you do not see the option for BizOps Workspace, you might need to upgrade your PubNub account.  This demo will only show the top 50 recently updated channels and users.
+        <br><br><strong>Not seeing the data update?</strong>   You will only receive events related to channels you are a member of (or users who are also members of that channel).  On launch, this dashboard will join all available channels.  To receive updates on any channels or users you create using BizOps Workspace, you will need to <u>create memberships between them</u>.  <br><br>Refresh data using the button below if you create a new channel using BizOps Workspace, this this dashboard will then join that new channel.  The dashboard may also automatically refresh if membership changes are detected</div>
 
         <div id="refreshArea">
             <div id="refreshDataWarning" class="text-body-1" style="display:none">Please Refresh Data --></div>

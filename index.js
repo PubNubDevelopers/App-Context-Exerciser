@@ -82,9 +82,9 @@ async function load() {
     //  The current user has no meta data associated with them, give them some.
     await pubnub.objects.setUUIDMetadata({
       data: {
-        name: "App Context Toolkit Exerciser",
+        name: "App Context Exerciser",
         custom: {
-          info: "User for App Context Toolkit testing",
+          info: "User for App Context testing",
         },
       },
       include: { customFields: true },
@@ -204,7 +204,7 @@ async function refreshData() {
           addUserToUI(users.data[i]);
 
           //  Populate the memberships
-          //  This is giving me channels I already deleted using the App Context Toolkit
+          //  This is giving me channels I already deleted using the Channel Management tool
           const userMemberships = await pubnub.objects.getMemberships({
             uuid: users.data[i].id,
             sort: { updated: "desc" },
