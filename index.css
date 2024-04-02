@@ -586,3 +586,9 @@ a:hover {
     font-family: 'Courier New', Courier, monospace;
     padding: 2px;
 }
+
+@media screen and (max-width: 700px) {
+    #appContextDisplayArea {
+        flex-direction: column;
+    }
+}
