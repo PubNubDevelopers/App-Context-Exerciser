@@ -587,7 +587,7 @@ a:hover {
     padding: 2px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 748px) {
     #appContextDisplayArea {
         flex-direction: column;
     }
